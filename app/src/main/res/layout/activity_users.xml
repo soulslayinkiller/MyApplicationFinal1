@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Users"
+        android:layout_marginTop="35dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="556dp" />
+
+    <Button
+        android:id="@+id/buttonback2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inventory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="616dp" />
+
+    <Button
+        android:id="@+id/buttonback4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="696dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="165dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="166dp"
+        android:src="@drawable/avtr6"/>
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="165dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="166dp"
+        android:src="@drawable/avtr5"/>
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="165dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="366dp"
+        android:src="@drawable/avtr2"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="165dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="366dp"
+        android:src="@drawable/avtr1" />
+
+
+    <TextView
+        android:id="@+id/editTextText1"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="45dp"
+        android:text="Tyra" />
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="463dp"
+        android:layout_marginEnd="10dp"
+        android:text="Jason" />
+
+    <TextView
+        android:id="@+id/editTextText3"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="240dp"
+        android:text="Sarah" />
+    <TextView
+        android:id="@+id/editTextText5"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="463dp"
+        android:layout_marginEnd="240dp"
+        android:text="Michael" />
+</RelativeLayout>

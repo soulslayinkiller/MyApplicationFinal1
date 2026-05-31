@@ -44,7 +44,16 @@ MODEL_GUIDE = {
     "short_video": {
         "model": "kling3_0",
         "unlimited_on_plus": "7-day add-on only",
-        "why": "Only video model that goes unlimited on Plus (720p/5s).",
+        "why": "Video model that goes unlimited on the Plus 7-Day pack (720p/5s).",
+    },
+    # The named "pick one 365-day Unlimited video model" options. If you've
+    # activated one of these on your account, that model's clips are free.
+    # (These specific turbo IDs may not be exposed as MCP generation targets,
+    # so generation here may route through the closest available model.)
+    "short_video_unlimited_options": {
+        "models": ["kling_2_5_turbo_std", "seedance_1_0_pro_fast", "minimax_hailuo_2_3_fast"],
+        "unlimited_on_plus": "365-day Unlimited add-on (pick one, fixed)",
+        "why": "Best path to truly free Short clips if you've activated one.",
     },
 }
 

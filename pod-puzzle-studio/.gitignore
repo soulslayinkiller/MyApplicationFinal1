@@ -1,0 +1,8 @@
+# Generated artifacts
+output/*.pdf
+output/assets/
+**/assets/art/*.png
+__pycache__/
+*.pyc
+.venv/
+venv/

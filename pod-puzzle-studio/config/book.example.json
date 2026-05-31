@@ -1,0 +1,17 @@
+{
+  "title": "Self-Care Sunday",
+  "subtitle": "Cozy Puzzles & Coloring for Tired Moms",
+  "author": "Your Brand Name",
+  "trim": "8.5x8.5",
+  "theme": "self_care",
+  "shop_url": "yourbrand.etsy.com",
+  "bleed": true,
+  "page_count_estimate": 60,
+  "sections": [
+    { "type": "coloring",    "count": 3 },
+    { "type": "word_search", "count": 3, "options": { "size": 14 } },
+    { "type": "crossword",   "count": 1 },
+    { "type": "sudoku",      "count": 2, "options": { "difficulty": "easy" } },
+    { "type": "maze",        "count": 2, "options": { "size": 16 } }
+  ]
+}

@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Downloaded media assets (pull from Higgsfield app, not git)
+examples/short_assets/

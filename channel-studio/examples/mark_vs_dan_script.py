@@ -4,7 +4,7 @@ Format: two friends, identical paychecks, opposite money habits, followed across
 decades to a satisfying reveal. This story structure retains far better than a
 dry explainer because the viewer picks a side and stays for the payoff.
 
-~1,200 words ≈ 9 min at 130 wpm (clears the 8-min mid-roll threshold).
+Calibrated to Fliki's real AI-voice speed (~173 wpm): ~1,580 words ≈ 9 min.
 Advertiser-safe: general education, illustrative numbers, explicit "not advice".
 
 Run to emit the Fliki paste-script + scene CSV/storyboard:
@@ -25,14 +25,18 @@ TITLE = "Two Friends, Same Paycheck — One Retired Rich (Here's Why)"
 SEGMENTS = [
     # HOOK
     "Mark and Dan started the exact same job, on the exact same day, for the "
-    "exact same paycheck. Same salary every year. Same raises. On paper, they "
-    "were financial twins. But thirty years later, one of them retired a "
-    "millionaire, and the other was still clocking in, quietly terrified of his "
-    "bank account. Here's the unsettling part: the one who ended up rich never "
-    "earned a single dollar more than the other. The difference came down to a "
-    "few small choices that looked almost meaningless at the time. Let me show "
-    "you exactly how this happened, month by month, because once you see it, "
-    "you can't unsee it.",
+    "exact same paycheck. Same salary every year. Same raises. Same bonuses. On "
+    "paper, they were financial twins. But thirty years later, one of them "
+    "retired a millionaire, free to do whatever he wanted, and the other was "
+    "still clocking in every morning, quietly terrified of opening his bank "
+    "account. Here's the unsettling part, the part that should make you lean "
+    "in: the one who ended up rich never earned a single dollar more than the "
+    "other. No secret inheritance. No lottery ticket. No genius stock pick. The "
+    "entire difference came down to a handful of small, almost invisible "
+    "choices, the kind of choices you are probably making or not making right "
+    "now without even noticing. Let me show you exactly how this happened, step "
+    "by step, because once you see this pattern, I promise you cannot unsee it, "
+    "and you'll start spotting it everywhere in your own life.",
 
     # SEGMENT 1 — meet the two
     "Let's meet our two friends properly. Mark is the guy everyone loves. The "
@@ -79,6 +83,21 @@ SEGMENTS = [
     "faster. He's running harder than ever and standing in exactly the same "
     "place.",
 
+    # SEGMENT 3B — the crossover moment
+    "Now I want to show you the single most satisfying moment in this entire "
+    "story, the one that almost nobody sees coming. Somewhere around year "
+    "twenty, Dan crosses an invisible line. Up until this point, most of his "
+    "wealth came from his own contributions, the money he chose not to spend. "
+    "But at the crossover, that flips completely. From here on, his account "
+    "grows more each year from its own returns than from anything he adds "
+    "himself. Read that again. His money is now out-earning his own savings. He "
+    "could stop contributing entirely, never add another cent, and the "
+    "snowball would keep rolling downhill on its own, getting bigger every "
+    "year. This is the exact moment a saver quietly turns into an investor, and "
+    "then into someone who is genuinely wealthy. Mark never gets anywhere near "
+    "this line, because Mark never started rolling the snowball in the first "
+    "place. You can't compound nothing.",
+
     # SEGMENT 4 — the lifestyle trap named
     "What happened to Mark has a name: lifestyle creep. Every time his income "
     "went up, his spending went up to match it, so he never actually got "
@@ -111,16 +130,36 @@ SEGMENTS = [
     "three decades feeding a machine that gave nothing back. That contrast, "
     "right there, is the entire lesson.",
 
+    # SEGMENT 5B — addressing the obvious objection
+    "Now, right about here, a lot of people push back with a fair question. "
+    "They say, doesn't Mark deserve to enjoy his money? Isn't Dan just "
+    "depriving himself for decades to die with a big number in an account? And "
+    "that's worth answering honestly. The point of this story was never that "
+    "you should live like a hermit and enjoy nothing. Dan didn't. He still went "
+    "out, still took trips, still had a life. The difference is that Dan paid "
+    "his future self first, automatically, and then enjoyed whatever was left, "
+    "while Mark paid everyone except his future self and left nothing behind. "
+    "Dan bought something Mark never did: freedom. The freedom to walk away "
+    "from a bad boss, to weather an emergency without panic, to choose how he "
+    "spends his one and only life. That, it turns out, is the most expensive "
+    "luxury of all, and the boring guy was the only one who could afford it.",
+
     # SEGMENT 6 — the viewer's turn
     "Now here's why this actually matters for you, watching right now. The good "
     "news buried in this story is that Dan was not special. He wasn't smarter, "
     "he didn't earn more, and he didn't pick magic stocks. He simply automated "
     "one boring decision and then got out of his own way for a very long time. "
     "The two levers that decided everything were within his control the whole "
-    "time: how much of each paycheck he kept, and how early he started letting "
-    "it grow. You don't need a huge income to become Dan. You need consistency "
-    "and time, and the single most powerful day to start was years ago. The "
-    "second most powerful day is today.",
+    "time, and they're within yours too: how much of each paycheck you keep, "
+    "and how early you start letting it grow. Notice what is not on that list. "
+    "Not a six-figure salary. Not perfect timing. Not picking the next big "
+    "company. Those things barely moved the needle compared to the two simple "
+    "habits Dan repeated for thirty years. And here's the part people find "
+    "hardest to accept: the most powerful ingredient in Dan's entire fortune "
+    "wasn't money at all. It was time. Time is the one resource you cannot earn "
+    "more of later, no matter how rich you become, which is why starting small "
+    "today beats starting big someday. The single most powerful day to plant "
+    "this tree was years ago. The second most powerful day is today.",
 
     # OUTRO
     "So the real question this story leaves you with is simple: right now, are "
@@ -147,8 +186,11 @@ def main():
         f.write(sceneflow.to_csv(scenes))
 
     words = sum(len(seg.split()) for seg in SEGMENTS)
-    print(f"✅ {words} words (~{words/130:.1f} min) — "
-          f"{'PASS' if words/130 >= 8 else 'UNDER'} 8-min mid-roll threshold")
+    # Fliki AI voice ≈ 173 wpm (measured), not the slower human-narration rate.
+    wpm = 173
+    minutes = words / wpm
+    print(f"✅ {words} words (~{minutes:.1f} min at {wpm} wpm) — "
+          f"{'PASS' if minutes >= 8 else 'UNDER'} 8-min mid-roll threshold")
     print(f"   {len(scenes)} scenes")
     print("   output/mark_vs_dan_fliki_script.txt  → paste into Fliki")
     print("   output/mark_vs_dan_scenes.md / .csv  → storyboard / backup")

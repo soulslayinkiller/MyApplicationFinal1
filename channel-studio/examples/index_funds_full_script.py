@@ -154,8 +154,14 @@ def main():
         f.write(sceneflow.to_csv(scenes))
 
     words = sum(len(seg.split()) for seg in SEGMENTS)
-    print(f"✅ Full script: {words} words (~{words/130:.1f} min) — "
-          f"{'PASS' if words/130 >= 8 else 'UNDER'} 8-min mid-roll threshold")
+    # Fliki AI voice ≈ 173 wpm (measured): ~1,128 words rendered to ~6:30.
+    # NOTE: this index-funds script is ~1,128 words ≈ 6.5 min — UNDER the 8-min
+    # mid-roll threshold. The Mark vs Dan script (1,574 words ≈ 9.1 min) is the
+    # calibrated, publish-ready one. Expand this script by ~430 words if used.
+    wpm = 173
+    minutes = words / wpm
+    print(f"✅ {words} words (~{minutes:.1f} min at {wpm} wpm) — "
+          f"{'PASS' if minutes >= 8 else 'UNDER (expand ~%d words)' % (8*wpm - words)} 8-min threshold")
     print(f"   {len(scenes)} scenes")
     print("   output/index_funds_fliki_script.txt  → paste into Fliki")
     print("   output/index_funds_scenes.md         → storyboard")

@@ -88,48 +88,99 @@ INDEX_FUNDS_BEATS: list[InfographicBeat] = [
 
 
 # Mark vs Dan video: the satisfying two-character visual journey.
+# 13 beats for a ~9-min video (~40s of screen time each) so the visuals never
+# go stale. Consistency tip: Mark always on the LEFT in red/orange, Dan always
+# on the RIGHT in green/blue — repeat that in every prompt for a coherent cast.
+_CAST = (
+    "Mark is a friendly cartoon man on the left in a red and orange outfit; "
+    "Dan is a friendly cartoon man on the right in a green and blue outfit; "
+    "keep both characters looking the same in every scene"
+)
+
 MARK_VS_DAN_BEATS: list[InfographicBeat] = [
+    # HOOK (2)
     InfographicBeat(
-        "hook",
-        "split-screen of two friendly cartoon men in identical office uniforms "
-        "shaking hands on their first day, an identical paycheck floating above "
-        "each of them, a clock and calendar showing the same start date",
+        "hook_handshake",
+        f"{_CAST}. The two men shaking hands on their first day at the same "
+        "office, an identical paycheck floating above each of them, a calendar "
+        "showing the same start date",
     ),
     InfographicBeat(
-        "meet_them",
-        "left side a flashy cartoon man with a shiny sports car, gold watch and "
-        "shopping bags; right side a calm cartoon man beside a modest used car "
-        "with a small arrow moving a coin into an investment jar",
+        "hook_split_future",
+        f"{_CAST}. A dramatic split down the middle: Mark on the left looking "
+        "stressed in old work clothes, Dan on the right relaxed and wealthy, a "
+        "big question mark between them",
+    ),
+    # MEET THEM (2)
+    InfographicBeat(
+        "meet_mark",
+        f"{_CAST}. Focus on Mark on the left celebrating beside a shiny new "
+        "leased sports car, a gold watch, a new phone and shopping bags, money "
+        "flying away from his pockets",
     ),
     InfographicBeat(
-        "invisible_gap",
-        "a party scene: one cartoon man getting all the attention by a fancy "
-        "car, the other standing quietly in the background while a tiny stack "
-        "of coins behind him glows and slowly grows",
+        "meet_dan",
+        f"{_CAST}. Focus on Dan on the right beside a modest used car, calmly "
+        "setting up an automatic transfer arrow that moves a coin from his "
+        "paycheck into a glowing investment jar",
+    ),
+    # INVISIBLE GAP (2)
+    InfographicBeat(
+        "party_scene",
+        f"{_CAST}. A party: Mark on the left getting all the attention next to "
+        "his flashy car while Dan stands quietly in the background, almost "
+        "invisible",
     ),
     InfographicBeat(
-        "compounding",
-        "a row of growing money trees getting taller left to right with a steep "
-        "exponential curve rising behind them, tiny cartoon coin characters "
-        "with arms carrying more coins, an army of dollars at work",
+        "hidden_seed",
+        f"{_CAST}. Behind Dan on the right, a small stack of coins quietly "
+        "glowing and beginning to sprout into a tiny money plant, unnoticed by "
+        "everyone at the party",
+    ),
+    # COMPOUNDING (2)
+    InfographicBeat(
+        "dollar_army",
+        "tiny friendly cartoon coin characters with little arms and legs "
+        "marching out and bringing back even more coins, an army of dollars at "
+        "work, on a navy background",
     ),
     InfographicBeat(
-        "lifestyle_creep",
-        "a cartoon man running on a treadmill chasing an ever-bigger car and "
-        "house that stay just out of reach, sweating, going nowhere, a flat "
-        "line of zero savings beneath him",
+        "compounding_curve",
+        "a row of money trees growing taller from left to right with a steep "
+        "exponential green curve rising behind them like a rocket, a small "
+        "calendar flipping from year one to year ten",
+    ),
+    # LIFESTYLE CREEP (2)
+    InfographicBeat(
+        "treadmill",
+        f"{_CAST}. Mark running on a treadmill chasing an ever-bigger car and "
+        "house that stay just out of reach, sweating, going nowhere",
     ),
     InfographicBeat(
-        "reveal",
-        "split finish line: left a tired cartoon man with an empty wallet still "
-        "in his work uniform; right a relaxed cartoon man on a beach chair "
+        "opportunity_cost",
+        f"{_CAST}. Mark on the left holding luxury items, while behind him a "
+        "faded ghostly outline shows the giant fortune those purchases could "
+        "have become, a sad shrinking arrow",
+    ),
+    # REVEAL (2)
+    InfographicBeat(
+        "finish_line",
+        f"{_CAST}. A finish line: Mark on the left tired with an empty wallet "
+        "still in his work uniform, Dan on the right relaxed in a beach chair "
         "beside a giant overflowing money bag and a soaring chart",
     ),
     InfographicBeat(
-        "your_turn",
-        "a single cartoon viewer standing at a fork in the road, one path toward "
-        "a treadmill, the other toward a money tree and a beach, a glowing "
-        "arrow inviting a choice",
+        "millionaire_dan",
+        f"{_CAST}. Dan on the right smiling beside a huge money bag with a big "
+        "upward chart, his money clearly now earning more than his old job, a "
+        "trophy nearby",
+    ),
+    # YOUR TURN (1)
+    InfographicBeat(
+        "fork_in_road",
+        "a single friendly cartoon viewer seen from behind standing at a fork "
+        "in the road, one path leading to a treadmill and bills, the other to a "
+        "money tree and a beach, a glowing arrow inviting a choice",
     ),
 ]
 

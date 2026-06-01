@@ -19,8 +19,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-# Target ~130 spoken words per minute (calm explainer pace).
-WORDS_PER_MINUTE = 130
+# Calibrated against real Fliki AI-voice output: ~1,128 words rendered to ~6:30,
+# i.e. ~173 wpm (AI voices read faster than a human explainer). Use this so
+# runtime estimates match what Fliki actually produces. To hit T minutes of
+# video, write ~ T * 173 words.
+WORDS_PER_MINUTE = 173
 # Put a mid-roll marker roughly every this-many seconds after the 8-min mark.
 MIDROLL_SPACING_S = 180
 

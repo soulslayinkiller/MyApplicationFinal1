@@ -87,6 +87,54 @@ INDEX_FUNDS_BEATS: list[InfographicBeat] = [
 ]
 
 
+# Mark vs Dan video: the satisfying two-character visual journey.
+MARK_VS_DAN_BEATS: list[InfographicBeat] = [
+    InfographicBeat(
+        "hook",
+        "split-screen of two friendly cartoon men in identical office uniforms "
+        "shaking hands on their first day, an identical paycheck floating above "
+        "each of them, a clock and calendar showing the same start date",
+    ),
+    InfographicBeat(
+        "meet_them",
+        "left side a flashy cartoon man with a shiny sports car, gold watch and "
+        "shopping bags; right side a calm cartoon man beside a modest used car "
+        "with a small arrow moving a coin into an investment jar",
+    ),
+    InfographicBeat(
+        "invisible_gap",
+        "a party scene: one cartoon man getting all the attention by a fancy "
+        "car, the other standing quietly in the background while a tiny stack "
+        "of coins behind him glows and slowly grows",
+    ),
+    InfographicBeat(
+        "compounding",
+        "a row of growing money trees getting taller left to right with a steep "
+        "exponential curve rising behind them, tiny cartoon coin characters "
+        "with arms carrying more coins, an army of dollars at work",
+    ),
+    InfographicBeat(
+        "lifestyle_creep",
+        "a cartoon man running on a treadmill chasing an ever-bigger car and "
+        "house that stay just out of reach, sweating, going nowhere, a flat "
+        "line of zero savings beneath him",
+    ),
+    InfographicBeat(
+        "reveal",
+        "split finish line: left a tired cartoon man with an empty wallet still "
+        "in his work uniform; right a relaxed cartoon man on a beach chair "
+        "beside a giant overflowing money bag and a soaring chart",
+    ),
+    InfographicBeat(
+        "your_turn",
+        "a single cartoon viewer standing at a fork in the road, one path toward "
+        "a treadmill, the other toward a money tree and a beach, a glowing "
+        "arrow inviting a choice",
+    ),
+]
+
+
 VIDEO_BEATS = {
     "index_funds": INDEX_FUNDS_BEATS,
+    "mark_vs_dan": MARK_VS_DAN_BEATS,
 }

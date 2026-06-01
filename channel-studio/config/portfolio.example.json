@@ -1,0 +1,27 @@
+{
+  "_comment": "The A/B/C test: 3 parallel channels, one per top-RPM niche. Update the 'videos' arrays from YouTube Studio (or wire the Analytics API). Run: python -m channel_studio.cli curate --portfolio config/portfolio.example.json",
+  "channels": [
+    {
+      "niche": "personal_finance",
+      "name": "Channel A — Personal Finance",
+      "videos": [
+        {"title": "How Index Funds Actually Work", "published": "2026-06-05", "views": 4200, "watch_hours": 410, "avg_view_pct": 46.0, "ctr_pct": 6.1, "rpm_usd": 17.5, "revenue_usd": 73.5},
+        {"title": "What $500/mo Becomes in 30 Years", "published": "2026-06-08", "views": 2600, "watch_hours": 240, "avg_view_pct": 41.0, "ctr_pct": 5.2, "rpm_usd": 16.0, "revenue_usd": 41.6}
+      ]
+    },
+    {
+      "niche": "make_money_online",
+      "name": "Channel B — Side Hustles",
+      "videos": [
+        {"title": "7 Realistic Side Hustles for 2026", "published": "2026-06-05", "views": 9100, "watch_hours": 520, "avg_view_pct": 33.0, "ctr_pct": 7.4, "rpm_usd": 12.0, "revenue_usd": 109.2}
+      ]
+    },
+    {
+      "niche": "legal_explainer",
+      "name": "Channel C — Know Your Rights",
+      "videos": [
+        {"title": "Your Rights When You're Pulled Over", "published": "2026-06-05", "views": 3000, "watch_hours": 280, "avg_view_pct": 49.0, "ctr_pct": 5.8, "rpm_usd": 14.5, "revenue_usd": 43.5}
+      ]
+    }
+  ]
+}

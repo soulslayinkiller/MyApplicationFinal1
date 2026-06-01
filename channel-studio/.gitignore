@@ -1,0 +1,6 @@
+# Generated briefs / reports (regenerate from configs)
+output/*.json
+__pycache__/
+*.pyc
+.venv/
+venv/

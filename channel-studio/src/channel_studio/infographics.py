@@ -150,11 +150,30 @@ MARK_VS_DAN_BEATS: list[InfographicBeat] = [
         "exponential green curve rising behind them like a rocket, a small "
         "calendar flipping from year one to year ten",
     ),
-    # LIFESTYLE CREEP (2)
+    # CROSSOVER MOMENT (mid-video, the satisfying flip) (2)
+    InfographicBeat(
+        "crossover_snowball",
+        f"{_CAST}. Dan on the right watching a snowball rolling downhill getting "
+        "huge on its own, a glowing line crossing over a smaller line on a "
+        "chart behind him, the moment returns overtake contributions",
+    ),
+    InfographicBeat(
+        "money_works_harder",
+        f"{_CAST}. Dan relaxing on the right while cartoon coin characters do "
+        "all the work building a tower of money, a sign reading bigger every "
+        "year, Dan no longer needing to add anything",
+    ),
+    # LIFESTYLE CREEP (3) — densest in the mid-video sag zone
     InfographicBeat(
         "treadmill",
         f"{_CAST}. Mark running on a treadmill chasing an ever-bigger car and "
         "house that stay just out of reach, sweating, going nowhere",
+    ),
+    InfographicBeat(
+        "raise_swallowed",
+        f"{_CAST}. Mark on the left receiving a bigger paycheck, but a hungry "
+        "cartoon monster labeled bigger lifestyle immediately eats the raise, "
+        "leaving his savings jar empty",
     ),
     InfographicBeat(
         "opportunity_cost",

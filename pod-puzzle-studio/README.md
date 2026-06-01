@@ -77,9 +77,19 @@ Edit a JSON config (see [`config/book.example.json`](config/book.example.json)):
 }
 ```
 
-Section types: `coloring`, `word_search`, `crossword`, `sudoku`, `maze`.
-Built-in themes: `self_care`, `cottagecore`, `parenting`
+Section types: `coloring`, `word_search`, `crossword`, `sudoku`, `maze`,
+`dot_to_dot`.
+Built-in themes: `self_care`, `cottagecore`, `parenting`, `construction_kids`
 (add your own in [`themes.py`](src/pod_studio/themes.py)).
+
+### Kids 3-5 activity books
+
+`dot_to_dot` (connect-the-dots, low counts for counting practice) plus
+big-line `coloring` and small `maze`/`word_search` grids make a complete
+toddler activity book. See [`config/kids_construction.json`](config/kids_construction.json)
+for a "Diggers & Trucks" example. Dot-to-dot shapes live in
+[`puzzles/dot_to_dot.py`](src/pod_studio/puzzles/dot_to_dot.py) (star, house,
+truck, boat, fish, heart — add more as data).
 
 ## Project layout
 

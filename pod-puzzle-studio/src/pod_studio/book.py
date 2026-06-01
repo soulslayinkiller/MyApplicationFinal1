@@ -23,6 +23,7 @@ from . import higgsfield as hf
 from . import render
 from .kdp import PageGeometry, resolve_geometry
 from .puzzles import crossword as cw
+from .puzzles import dot_to_dot as dd
 from .puzzles import maze as mz
 from .puzzles import sudoku as sk
 from .puzzles import word_search as ws
@@ -80,6 +81,7 @@ def _title_for(section_type: str) -> str:
         "maze": "Maze",
         "crossword": "Crossword",
         "coloring": "Color & Relax",
+        "dot_to_dot": "Connect the Dots",
     }.get(section_type, section_type.title())
 
 
@@ -128,6 +130,10 @@ def build(spec: BookSpec, out_path: str, *, page_count_estimate: int = 100,
                 p = cw.generate(spec.theme.crossword)
                 render.crossword(c, inner, p)
                 solutions.append(("crossword", p))
+            elif section.type == "dot_to_dot":
+                p = dd.by_index(i)
+                render.dot_to_dot(c, inner, p)
+                solutions.append(("dot_to_dot", p))
             elif section.type == "coloring":
                 subj = spec.theme.coloring_subjects[
                     i % len(spec.theme.coloring_subjects)
@@ -167,6 +173,8 @@ def build(spec: BookSpec, out_path: str, *, page_count_estimate: int = 100,
                 render.maze(c, inner, puzzle, solution=True)
             elif stype == "crossword":
                 render.crossword(c, inner, puzzle, solution=True)
+            elif stype == "dot_to_dot":
+                render.dot_to_dot(c, inner, puzzle, solution=True)
             pager.footer(box)
 
     # ---- Back matter: shop CTA ----

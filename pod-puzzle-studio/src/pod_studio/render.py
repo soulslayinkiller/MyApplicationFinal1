@@ -12,6 +12,7 @@ from reportlab.lib.colors import HexColor, black, white
 from reportlab.pdfgen.canvas import Canvas
 
 from .puzzles import crossword as cw
+from .puzzles import dot_to_dot as dd
 from .puzzles import maze as mz
 from .puzzles import sudoku as sk
 from .puzzles import word_search as ws
@@ -203,6 +204,45 @@ def crossword(c: Canvas, box, puzzle: cw.Crossword, *, solution=False):
 
     draw_clues("ACROSS", across, x)
     draw_clues("DOWN", down, x + col_w)
+
+
+# --------------------------------------------------------------------------
+# Dot-to-dot (connect the dots) — kids 3-5
+# --------------------------------------------------------------------------
+def dot_to_dot(c: Canvas, box, puzzle: dd.DotToDot, *, solution=False):
+    x, y, w, h = box
+    # Keep the shape in a centred square so it isn't stretched.
+    side = min(w, h)
+    ox = x + (w - side) / 2
+    oy = y + (h - side) / 2
+    pts = [(ox + px * side, oy + py * side) for px, py in puzzle.points]
+
+    if solution:
+        # Show the completed outline.
+        c.setStrokeColor(black)
+        c.setLineWidth(2)
+        for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+            c.line(x0, y0, x1, y1)
+        if puzzle.closed:
+            c.line(pts[-1][0], pts[-1][1], pts[0][0], pts[0][1])
+
+    # Dots + big numbers (always shown).
+    r = max(2.5, side * 0.012)
+    c.setFont("Helvetica-Bold", side * 0.045)
+    for i, (px, py) in enumerate(pts, 1):
+        c.setFillColor(black)
+        c.circle(px, py, r, stroke=0, fill=1)
+        c.setFillColor(HexColor("#FF5A5F"))
+        # Offset the number so it doesn't sit under the dot.
+        c.drawString(px + r + 2, py + r, str(i))
+
+    # Gentle instruction line for little ones.
+    c.setFillColor(GREY)
+    c.setFont("Helvetica", 12)
+    c.drawCentredString(
+        x + w / 2, y + 4,
+        f"Connect the dots 1 to {len(pts)} to find the {puzzle.name.lower()}!",
+    )
 
 
 def _wrap(text, max_w, c, font_size):

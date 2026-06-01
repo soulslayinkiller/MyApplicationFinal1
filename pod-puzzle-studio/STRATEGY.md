@@ -49,8 +49,15 @@ for Kids."
 - **Kids 3–5 content** is a *great product* idea and a *tricky channel* idea.
   - ✅ **Product:** activity books for 3–5 (big-line coloring, dot-to-dot,
     simple mazes, "trace the letter") sell extremely well — **the parent is the
-    buyer**, which is still your "moms" customer. The generator already does
-    mazes/coloring; dot-to-dot + tracing are on the roadmap.
+    buyer**, which is still your "moms" customer. The generator now ships
+    `dot_to_dot` + a `construction_kids` ("Diggers & Trucks") theme — see
+    `config/kids_construction.json`. Letter-tracing is next on the roadmap.
+
+  - 🚜 **You've already started this!** Your Higgsfield feed has a 3D excavator
+    mascot built for a "children's YouTube channel" banner. Diggers/excavators
+    are a top-3 toddler niche (the Blippi / "real diggers for kids" space).
+    Pair it with paint-mixing ("what color is the digger scooping today?") and
+    you have a ready channel concept that sells the Diggers & Trucks book.
   - ⚠️ **Channel:** going *directly* at toddlers triggers COPPA and breaks the
     funnel. **Better play:** make a **"activities for your 3–5 year old"
     channel aimed at the *parent*** ("5 quiet-time activities that actually

@@ -137,7 +137,47 @@ PARENTING = Theme(
     ],
 )
 
-THEMES = {t.key: t for t in (SELF_CARE, COTTAGECORE, PARENTING)}
+CONSTRUCTION_KIDS = Theme(
+    key="construction_kids",
+    title="Diggers & Trucks",
+    description="cute cartoon construction vehicles for toddlers, diggers, "
+    "dump trucks, cranes, bright friendly, big simple shapes",
+    # Short, simple words for early readers (word search uses a small grid).
+    words=[
+        "DIGGER", "TRUCK", "CRANE", "MIXER", "ROLLER",
+        "DUMP", "WHEEL", "SCOOP", "DIRT", "ROCKS",
+        "HARD", "HAT", "BIG", "DIG", "BEEP",
+    ],
+    crossword=[
+        ("DIGGER", "It scoops up the dirt"),
+        ("TRUCK", "It carries the rocks away"),
+        ("CRANE", "It lifts things up high"),
+        ("WHEEL", "Round and it rolls"),
+        ("SCOOP", "What a digger does"),
+        ("DIRT", "Brown stuff you dig"),
+        ("HAT", "A hard ___ keeps you safe"),
+        ("BEEP", "Sound a truck makes"),
+    ],
+    coloring_subjects=[
+        "a cute smiling cartoon excavator digging, bold simple lines for toddlers",
+        "a happy dump truck full of rocks, big thick outlines",
+        "a friendly crane lifting a beam, simple bold coloring page",
+        "a cement mixer truck with a smiling face, chunky lines",
+        "a steamroller with big eyes, simple toddler coloring page",
+    ],
+    affirmations=[
+        "I can do big things!",
+        "Dig in and try!",
+        "Beep beep, great job!",
+        "Build something today!",
+        "I am strong like a truck!",
+    ],
+)
+
+THEMES = {
+    t.key: t
+    for t in (SELF_CARE, COTTAGECORE, PARENTING, CONSTRUCTION_KIDS)
+}
 
 
 def get(key: str) -> Theme:

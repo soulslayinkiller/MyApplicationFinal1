@@ -1,51 +1,69 @@
 scene,narration,broll_keyword,on_screen_text,kind
-1,"If you put 100 dollars into a typical index fund forty years ago, it would be worth over 5,000 dollars today, without you doing anything at all.",stock market graph,100,chart
-2,"No stock picking, no day trading, no watching the news.",finance business b-roll,,broll
-3,So why does almost nobody understand how these things actually work?,finance business b-roll,,broll
-4,"In the next few minutes, that changes.",finance business b-roll,,broll
-5,Let's start with the simplest possible definition.,finance business b-roll,,broll
-6,An index is just a list.,finance business b-roll,,broll
-7,"The S&P 500, for example, is a list of about 500 of the largest companies in the United States.",finance business b-roll,"500,",broll
-8,An index fund is a basket that holds a tiny slice of every company on that list.,stock market graph,,chart
-9,"So when you buy one share of an S&P 500 index fund, you instantly own a sliver of 500 businesses at once.",stock market graph,500,chart
-10,You are not betting on one company winning.,finance business b-roll,,broll
-11,"You are betting that the overall economy keeps growing over time, which, historically, it has.",finance business b-roll,,broll
-12,That single idea is why index funds exist.,stock market graph,,chart
-13,Here is why that basket matters so much.,investing app phone,,broll
-14,"Imagine you put everything into a single company, and that company goes bankrupt.",investing app phone,,broll
-15,Your money is gone.,cash money counting,,broll
-16,"Now imagine you own 500 companies, and one goes bankrupt.",investing app phone,500,broll
-17,"You barely feel it, because the other 499 are still working for you.",investing app phone,499,broll
-18,"This is called diversification, and it is the closest thing investing has to a free lunch.",investing app phone,,broll
-19,You lower your risk without necessarily lowering your long-term return.,investing app phone,,broll
-20,"A single bad headline can sink one stock, but it almost never sinks the entire market at once.",stock exchange screen,,broll
-21,Now for the part that quietly decides who builds wealth and who doesn't: fees.,luxury city skyline,,broll
-22,Every fund charges a small yearly fee called an expense ratio.,finance business b-roll,,broll
-23,A typical actively managed fund might charge one percent or more.,finance business b-roll,,broll
-24,A broad index fund might charge as little as three hundredths of a percent.,stock market graph,,chart
-25,"That sounds tiny, but over thirty years, a one percent fee can eat away tens of thousands of dollars from your final balance.",finance business b-roll,,broll
-26,Lower fees mean more of your money stays invested and keeps compounding.,growth chart animation,,chart
-27,This is the main reason index funds quietly beat most expensive funds over the long run.,stock market graph,,chart
-28,"Speaking of compounding, this is where the real magic lives.",growth chart animation,,chart
-29,Compounding means your gains start earning their own gains.,growth chart animation,,chart
-30,"In year one, your money grows a little.",cash money counting,,broll
-31,"In year two, that growth also grows.",finance business b-roll,,broll
-32,Stretch this over decades and the curve stops looking like a gentle slope and starts looking like a rocket.,finance business b-roll,,broll
-33,This is exactly why starting early matters more than starting with a lot.,finance business b-roll,,broll
-34,"Someone who invests a small amount in their twenties can end up ahead of someone who invests far more in their forties, simply because time did the heavy lifting.",investing app phone,,broll
-35,"But there is one mistake that wrecks all of this, and almost every beginner makes it: panic selling.",investing app phone,,broll
-36,"When the market drops, and it always does sometimes, the instinct is to pull your money out to stop the pain.",stock exchange screen,,broll
-37,The problem is that the biggest up days in the market often happen right after the biggest down days.,stock exchange screen,,broll
-38,"If you sell at the bottom and sit in cash, you miss the recovery.",investing app phone,,broll
-39,"Historically, the people who simply stayed invested and did nothing during the scary periods came out far ahead of the people who tried to time their exit.",investing app phone,,broll
-40,So how would a complete beginner actually start?,finance business b-roll,,broll
-41,"In simple terms, you open an investment account with a reputable brokerage, you choose a broad, low-cost index fund, and you set up a small automatic contribution every month.",stock market graph,,chart
-42,"That last part, automation, removes emotion from the equation.",finance business b-roll,,broll
-43,You are no longer deciding whether to invest each month; it just happens.,investing app phone,,broll
-44,"Over years, those automatic contributions plus compounding do the work while you live your life.",growth chart animation,,chart
-45,The goal is not to get rich this week.,finance business b-roll,,broll
-46,"The goal is to be consistently, boringly invested for a very long time.",investing app phone,,broll
-47,"If this made index funds finally click, the best thing you can do is keep learning before you put real money anywhere.",stock market graph,,chart
-48,"Next week, we are breaking down exactly how much a small monthly investment can grow into over twenty years, with real numbers.",investing app phone,,broll
-49,Subscribe so you don't miss it.,finance business b-roll,,broll
-50,"And remember, this video is general education, not financial advice, so always do your own research for your own situation.",finance business b-roll,,broll
+1,"If you had put just 100 dollars into a typical American index fund forty years ago, it would be worth over 5,000 dollars today, without you doing a single thing.",stock market graph,100,chart
+2,No stock picking.,finance business b-roll,,broll
+3,No day trading.,finance business b-roll,,broll
+4,No staring at red and green numbers all day.,finance business b-roll,,broll
+5,"You would have simply bought it, forgotten about it, and let time do the work.",finance business b-roll,,broll
+6,"So why does almost nobody actually understand how these things work, even though they might be the single most powerful wealth-building tool available to ordinary people?",luxury city skyline,,broll
+7,"By the end of this video, you will understand index funds better than most adults ever will.",stock market graph,,chart
+8,Let's get into it.,finance business b-roll,,broll
+9,"Let's start with the simplest possible definition, because the name makes it sound more complicated than it is.",finance business b-roll,,broll
+10,An index is just a list.,finance business b-roll,,broll
+11,"The S&P 500, the most famous example, is simply a list of roughly 500 of the largest publicly traded companies in the United States.",finance business b-roll,"500,",broll
+12,"Think names like Apple, Microsoft, and Coca-Cola.",finance business b-roll,,broll
+13,An index fund is a basket that holds a tiny piece of every single company on that list.,stock market graph,,chart
+14,"So when you buy one share of an S&P 500 index fund, you are not buying one company.",stock market graph,500,chart
+15,You instantly own a microscopic sliver of all 500 of them at the same time.,finance business b-roll,500,broll
+16,You are no longer betting on one business getting it right.,finance business b-roll,,broll
+17,"You are betting that the American economy, as a whole, keeps growing over the long run, which, across its entire history, it has.",finance business b-roll,,broll
+18,That one idea is the foundation of everything else in this video.,finance business b-roll,,broll
+19,Now here is why owning that whole basket matters so much.,investing app phone,,broll
+20,Imagine you took your life savings and put all of it into a single company.,investing app phone,,broll
+21,"If that company fails, and even huge companies sometimes do, your money is simply gone.",cash money counting,,broll
+22,There is no recovery.,investing app phone,,broll
+23,"Now imagine instead that you own 500 companies, and one of them goes bankrupt.",investing app phone,500,broll
+24,"You would barely notice, because the other 499 are still out there working for you.",investing app phone,499,broll
+25,"This is called diversification, and it is often described as the only free lunch in investing.",investing app phone,,broll
+26,You dramatically lower your risk without necessarily lowering your long-term return.,investing app phone,,broll
+27,"A single bad earnings report or scandal can destroy one stock overnight, but it almost never destroys the entire market at once.",stock exchange screen,,broll
+28,"Spreading your money across hundreds of companies is what turns investing from a gamble into a patient, sensible strategy.",investing app phone,,broll
+29,"Next comes the part that quietly separates the people who build real wealth from the people who don't, and almost nobody pays attention to it: fees.",luxury city skyline,,broll
+30,Every fund charges a small annual fee called an expense ratio.,finance business b-roll,,broll
+31,"It is taken out automatically, so you never feel it leave your pocket.",finance business b-roll,,broll
+32,"A traditional, actively managed fund, where a manager picks stocks for you, might charge one percent or even more every year.",finance business b-roll,,broll
+33,A broad index fund might charge as little as three or four hundredths of one percent.,stock market graph,,chart
+34,That difference sounds almost too small to matter.,finance business b-roll,,broll
+35,"But run the math over thirty years, and that one percent fee can quietly eat away tens of thousands of dollars from your final balance.",finance business b-roll,,broll
+36,Every dollar you don't pay in fees stays invested and keeps compounding for you.,growth chart animation,,chart
+37,"This single, boring detail is the biggest reason low-cost index funds tend to beat expensive funds over the long run.",stock market graph,,chart
+38,"Speaking of compounding, this is where the real magic actually lives, and it is worth slowing down for.",growth chart animation,,chart
+39,Compounding means your gains begin earning gains of their own.,growth chart animation,,chart
+40,"In year one, your money grows a little.",cash money counting,,broll
+41,"In year two, that new growth also starts growing.",finance business b-roll,,broll
+42,"Stretch this process over decades, and the line on the chart stops looking like a gentle hill and starts looking like a rocket leaving the ground.",finance business b-roll,,broll
+43,Here is the part that surprises people most: starting early matters far more than starting with a large amount.,finance business b-roll,,broll
+44,"Someone who invests a modest sum in their twenties and stops can easily end up with more than someone who invests much more, but doesn't begin until their forties.",investing app phone,,broll
+45,The difference isn't the money.,cash money counting,,broll
+46,It's the years.,finance business b-roll,,broll
+47,"Time is the one ingredient you can never buy back later, which is why the best moment to start is almost always as soon as you reasonably can.",finance business b-roll,,broll
+48,"But there is one mistake that can quietly undo everything we've talked about, and nearly every beginner makes it at least once: panic selling.",investing app phone,,broll
+49,"When the market drops sharply, and it absolutely will from time to time, every instinct in your body screams at you to pull your money out and stop the bleeding.",stock exchange screen,,broll
+50,The cruel irony is that some of the single biggest up days in market history have happened just days after the biggest down days.,stock exchange screen,,broll
+51,"If you sell in fear at the bottom and sit in cash, you don't just lock in your losses, you also miss the powerful recovery that often follows.",investing app phone,,broll
+52,Decades of data show the same thing again and again: the investors who simply stayed put and did nothing during the scary stretches almost always came out far ahead of the ones who tried to cleverly time their way in and out.,investing app phone,,broll
+53,"Doing nothing is a strategy, and often the winning one.",investing app phone,,broll
+54,So how would a complete beginner actually put all of this into practice?,finance business b-roll,,broll
+55,"In plain terms, the process has just three steps.",finance business b-roll,,broll
+56,"First, you open an investment account with a reputable, well-known brokerage.",investing app phone,,broll
+57,"Second, you choose a broad, low-cost index fund, the kind that holds hundreds or even thousands of companies for a tiny fee.",stock market graph,,chart
+58,"And third, and this is the secret that ties it all together, you set up a small automatic contribution every single month.",finance business b-roll,,broll
+59,That automation quietly removes emotion from the entire equation.,finance business b-roll,,broll
+60,"You are no longer deciding whether to invest when the headlines are scary, because the decision was already made once, in advance.",investing app phone,,broll
+61,"Month after month, those steady contributions combine with compounding to do the heavy lifting while you simply live your life.",growth chart animation,,chart
+62,The goal was never to get rich by Friday.,finance business b-roll,,broll
+63,"The goal is to be consistently, almost boringly, invested for a very long time.",investing app phone,,broll
+64,"If this finally made index funds click for you, the most valuable thing you can do right now is keep learning before you ever put real money anywhere.",stock market graph,,chart
+65,"Next week, we are breaking down exactly how much a small monthly investment can realistically grow into over twenty years, using real numbers you can follow along with.",investing app phone,,broll
+66,Subscribe so it lands in your feed the moment it goes live.,finance business b-roll,,broll
+67,"And one important reminder: this video is general education, not financial advice, so always do your own research for your own situation before making any decision.",finance business b-roll,,broll
+68,"Thanks for watching, and I'll see you in the next one.",finance business b-roll,,broll
